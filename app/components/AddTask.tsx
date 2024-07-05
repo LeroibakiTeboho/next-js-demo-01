@@ -29,14 +29,14 @@ const AddTask = () => {
     <div>
       <button
         onClick={() => setModalOpen(true)}
-        className='btn btn-primary w-full'
+        className='btn btn-primary float-left'
       >
         Add new task <AiOutlinePlus className='ml-2' size={18} />
       </button>
 
       <Modal modalOpen={modalOpen} setModalOpen={setModalOpen}>
         <form onSubmit={handleSubmitNewTodo}>
-          <h3 className='font-bold text-lg'>Add new task</h3>
+          <h3 className='font-bold text-lg'>Add New Task</h3>
           <div className='modal-action'>
             <input
               value={newTaskValue}
